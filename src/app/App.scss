@@ -1,4 +1,4 @@
-@import '../index.scss';
+@import "../index.scss";
 
 .todo {
   display: grid;
@@ -13,6 +13,14 @@
     grid-column: 1 / span 1;
   }
   &__content {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+  }
+  &__create {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+  }
+  &__List {
     grid-row: 2/-1;
     grid-column: 2/-1;
   }

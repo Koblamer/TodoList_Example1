@@ -1,0 +1,102 @@
+@import "../../index.scss";
+
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+
+  &__text {
+    font-size: 2.4rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    color: $grey-dark;
+  }
+}
+
+.todo__create {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+
+  &__button {
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+    text-align: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+  &__text {
+    color: grey;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.todo__form__container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid $grey-light;
+}
+
+.todo__form__input {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.todo__form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo__error {
+  justify-self: start;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 800;
+  color: $primary;
+}
+.todo__form__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 1;
+
+  & > button {
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  & > button:last-child {
+    background-color: $primary;
+    color: $white;
+  }
+}
